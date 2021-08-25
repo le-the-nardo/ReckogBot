@@ -14,19 +14,14 @@ Ferramentas que utilizei para implementação e teste da API:
 
 ## Funções implementadas no chatbot:
 
-- `GET /repositories`: Rota que lista todos os repositórios;
+
+- `clean_up_sentences`: responsável por limpar as frases e transformá-las na sua forma mais enxuta possível;
 
 
-- `Post /repositories`: Rota que recebe um  "title", "url" e "techs" no corpo da requisição;
+- `get_response`: percorre a lista de possíveis tags e retorna a resposta correspondente;
 
 
-- `clean_up_sentences`: responsável por limpar as frases e transformá-las na sua forma mais enxuta possível.
-
-
-- `get_response`: percorre a lista de possíveis tags e retorna a resposta correspondente.
-
-
-- `bag_of_words`: responsável por converter uma sentença em uma lista de palavras e verificar se essa lista de palavras se encaixa no modelo pré-treinado.
+- `bag_of_words`: responsável por converter uma sentença em uma lista de palavras e verificar se essa lista de palavras se encaixa no modelo pré-treinado;
 
 - `predict_class`: para prever em qual tag a “bag_of_words” se encaixa, utilizando as duas funções anteriores.
 
